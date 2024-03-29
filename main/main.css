@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  list-style: none;
+  background-color: black;
+  text-decoration: none;
+  font-family: cursive;
+}
+
+a {
+  cursor: pointer;
+}
+
+header {
+  padding: 20px;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid;
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+header ul li {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 3;
+}
+
+header ul li a {
+  width: 100%;
+  height: 40px;
+  display: block;
+}
+
+/* ------------------main------------------------------------------ */
+.langs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.lang {
+  width: 23.333%;
+  background-color: white;
+  margin: 10px;
+}
+
+.lang>p {
+  font-family: monospace;
+  font-size: 15px;
+  padding: 10px;
+  line-height: 2;
+}
+
+.lang h3 {
+  color: black;
+  font-size: 25px;
+  background-color: white;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.lang p {
+  color: black;
+  background-color: white;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+/* 1100px~1299px */
+@media (min-width:1100px) and (max-width:1299px) {
+  .lang {
+    width: 48%;
+  }
+}
+
+/* 801px~1099px */
+@media (min-width:801px) and (max-width:1099px) {
+  .langs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .lang {
+    width: 47.1%;
+    margin-bottom: 30px;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  header h2 {
+    width: 30%;
+  }
+
+  header ul {
+    width: 30%;
+  }
+}
+
+/* 0px~800px */
+@media (min-width:0px) and (max-width:800px) {
+  .langs {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .lang {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  header {
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+  }
+
+  header h2 {
+    width: 35%;
+    line-height: 3.8;
+    font-size: 20px;
+  }
+
+  header ul {
+    width: 65%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header ul>li>a {
+    height: 70px;
+    padding-top: 16px;
+  }
+
+}

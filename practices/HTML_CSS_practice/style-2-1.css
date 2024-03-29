@@ -1,0 +1,30 @@
+img{
+  width: 250px;
+  border-radius:50%;
+}
+h1{
+  background-color: black;
+  color: white;
+  width: 30%;
+  text-align: center;
+}
+.main{
+  background-color: rgba(128, 128, 128, 0.475);
+  width: 80%;
+  height: 300px;
+  margin: 0 auto;
+  padding: 10px ;
+}
+.main a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid;
+  padding: 10px 30px;
+  display: inline-block;
+}
+img{
+  position: absolute;
+  top:250px;
+  right:100px;
+}

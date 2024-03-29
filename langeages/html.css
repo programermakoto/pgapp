@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  list-style: none;
+  background-color: black;
+  text-decoration: none;
+  font-family: cursive;
+}
+
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+header {
+  padding: 20px;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h2 {
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+header ul {
+  display: flex;
+  width: 24%;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+header ul li {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 3;
+}
+
+header ul li a {
+  width: 100%;
+  height: 40px;
+  display: block;
+}
+
+/* ------------------subject----------------------- */
+.subject {
+  width: 100%;
+  height: 90vh;
+}
+
+.subject h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 10% 10% 0;
+  margin-bottom: 20px;
+}
+
+.subject p {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  padding: 0 5%;
+}
+
+/* ---------------curriculum-------------------------- */
+.curriculum {
+  width: 100%;
+  border-bottom: 1px solid white;
+  padding: 5%;
+}
+
+.curriculum>h1 {
+  margin-bottom: 50px;
+}
+
+.int {
+  display: flex;
+  width: 100%;
+}
+
+/* アコーディオン */
+.accordion {
+  width: 70%;
+  margin-right: 10px;
+}
+
+dl>div {
+  margin-bottom: 8px;
+}
+
+dl>div.appear dd {
+  display: block;
+}
+
+dl>div.appear dt::after {
+  display: none;
+}
+
+dt {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  border-bottom: 1px solid white;
+  padding: 30px;
+  font-family: Courier, monospace;
+  font-weight: normal;
+}
+
+dt::after {
+  content: '⬇︎';
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  color: rgb(165, 165, 255);
+}
+
+dd {
+  padding: 8px;
+  margin: 0;
+  display: none;
+  font-family: Courier, monospace;
+  font-weight: normal;
+}
+
+dd>a {
+  display: block;
+  padding: 10px 0;
+}
+
+dl>div.appear dd {
+  display: block;
+  animation: 1s fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* -------------------------------------------------- */
+.box {
+  width: 30%;
+  height: 70vh;
+  border: 1px solid white;
+  margin-top: 5%;
+}
+
+.box img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.box ul {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.box h3 {
+  text-align: center;
+  line-height: 2;
+  color: white;
+}
+
+.box ul>li {
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* ------------------------------footer----------------------------------- */
+footer {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 1100px~1299px */
+@media (min-width:1100px) and (max-width:1299px) {
+  .subject {
+    height: 90vh;
+  }
+}
+
+/* 801px~1099px */
+@media (min-width:801px) and (max-width:1099px) {
+  header{
+    width: 100%;
+  }
+  header h2{
+    width: 30%;
+  }
+  header ul {
+    width: 30%;
+  }
+  .subject {
+    height: 60vh;
+  }
+  .int {
+    flex-direction: column-reverse;
+  }
+
+  .accordion {
+    width: 100%;
+  }
+
+  .box {
+    width: 100%;
+    margin-bottom: 30px;
+    height: auto;
+  }
+
+  .box ul {
+    width: 30%;
+  }
+}
+
+/* 0px~800px */
+@media (min-width:0px) and (max-width:800px) {
+  header{
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+  }
+  header h2{
+    width: 35%;
+    line-height: 3.8;
+    font-size: 20px;
+  }
+  header ul {
+    width: 65%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header ul>li>a{
+    height: 70px;
+    padding-top: 16px;
+  }
+  .subject {
+    height: 40vh;
+  }
+
+  .subject h1 {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 10% 10% 0;
+    margin-bottom: 20px;
+  }
+
+  .subject p {
+    width: 100%;
+    font-size: 10px;
+    padding: 0 5%;
+  }
+
+  .int {
+    flex-direction: column-reverse;
+  }
+
+  .accordion {
+    width: 100%;
+  }
+
+  .box {
+    width: 100%;
+    margin-bottom: 30px;
+    height: auto;
+  }
+
+  .box ul {
+    width: 80%;
+  }
+}

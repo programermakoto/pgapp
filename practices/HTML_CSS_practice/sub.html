@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>practice1</title>
+  <link rel="icon" href="../../images/ex.jpg">
+</head>
+<body>
+  <h1>インスタグラム</h1>
+  <small>インスタグラム貼り付けしていきます！</small><!--<p>より小さい文字-->
+  <br>
+  <br>
+  <hr>
+  <pre><!--  preタグ<br>書かなくてもEnterキー,tabキーで書かなくても  -->
+    ここでは         preタグを使い
+    自由自在に                 スペースと
+        改行を行えることを    確認して下さい。
+  </pre>
+  <hr>
+  <br>
+  <br>
+  <iframe width="100%" height="800" src="https://www.youtube.com/embed/H6FUBWGSOIc?si=uP_PXN5QcWh_xsvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <a href="index-1.html">index/htmlに戻る</a>
+  <br>
+  <br>
+  <i>最後にindex.htmlファイルに戻れるリンクを貼り付けて下さい</i><!--iタグは文字斜体にする-->
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+  <br>
+  <br>
+  <form> <!--送信するものを囲むタグ-->
+    <div>
+      <label for="name">お名前</label><!--labelとinput結びつける(お名前のんテキストを押してもinoutにフォーカスが当たる)-->
+      <input type="text" id="name" placeholder="例::MAKOTO">
+      <!--placeholderはユーザーが入力したら消えるテキスト-->
+    </div>
+
+    <fieldset>  <!--fieldsetは線で囲う legendは囲った上に文字を出す-->
+      <legend>対象の言語</legend>     
+      <label><input type="checkbox">html</label>
+      <label><input type="checkbox">css</label>
+      <label><input type="checkbox">javascript</label>
+      <label><input type="checkbox">php</label>
+    </fieldset>
+
+    <fieldset>    
+      <legend>IT系就職</legend>    
+        <label><input type="radio" name="warranty" checked>希望</label> 
+        <label><input type="radio" name="warranty">希望しない</label>
+        <label><input type="radio" name="warranty">わからない</label>
+    </fieldset>
+    <!--name属性は選択肢が１つのみに絞られる-->
+    <div>性別
+      <input type="radio" name="user_gender" value="man">男性
+      <input type="radio" name="user_gender" value="woman">女性
+    </div>
+
+    <div>
+      年齢
+      <select name="user_age">
+        <option value="20">20代</option><!--valueは実際に送信されるデータ-->
+        <option value="30">30代</option>
+        <option value="40">40代</option>
+      </select>
+    </div>
+    
+    <div>
+      <label>パスワード<input type="password"></label> <!--type="passwordは入力した文字が隠れる-->
+    </div>
+    <div>
+      <label>指導回数 <input type="number"></label>    <!--数値のみ選べるように-->   
+    </div>
+    <div>
+      <label>日付 <input type="date"></label>  <!--カレンダーに-->        
+    </div>
+    <div>
+      <label>
+        種別
+              <select>
+                <option >--お問合せ種別を選択してください--</option>
+                <option>料金確認</option>
+                <option>サポート内容を確認</option>
+                <option>学べる勉強を確認</option>
+                <option>決済手段を確認</option>
+                <option>その他</option>
+              </select>
+      </label>
+    </div>
+    <div>お問い合わせカテゴリーを選択してください</div>
+    <div>    
+
+      <label for="Name">内容</label>
+
+      <textarea id="Name" cols="30" rows="5" required placeholder="例：その他の記入欄"></textarea>
+<!--cols="30"は横幅 rows="5"は縦幅 requiredは入力必須にする-->
+    </div>
+    <div>
+      <input type="submit" ><!-- submitは送信, valueは送信テキストの文字を変えれる-->
+    </div>
+    <div>
+        <input type="submit" value="保存" disabled><!-- disabledは無効（押せない状態）-->
+    </div>
+</form>
+</body>
+</html>

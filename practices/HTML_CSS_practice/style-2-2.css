@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: antiquewhite;
+}
+.box{
+  background-color: rgba(17, 19, 19, 0.297);
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5%;
+}
+.box video{
+  width: 100%;
+}
+.scrolled{
+  width: 70%;
+  height: 200px;
+  margin: 0 auto;
+  border: 1px solid;
+  overflow:scroll;
+}
+a{
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px solid gray;
+  color: black;
+  text-decoration: none;
+  display: block;
+  width: 100px;
+  margin: 20px auto;
+}
+a:hover{
+  background-color: black;
+  color: white;
+}
