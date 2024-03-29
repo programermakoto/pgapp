@@ -120,9 +120,15 @@ git cloneで受け取り毎回報告で！
 GIT HUBに HTML~PHPで使用する画像を入れて生徒さんにcloneしてもらう！
 
 ##git 更新する場合
+
 1.cdでdesktopに戻り
+
 2.git init
+
 3.git add -A .
+
 4.git commit -m "comment"
+
 5.git remote add origin https://github.com/programermakoto/eishi-quiz.git
+
 6.git push -u origin master
