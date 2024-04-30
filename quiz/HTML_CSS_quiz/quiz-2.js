@@ -1,8 +1,183 @@
 const questions = [
-  { question: "HTMLとは何の略？", choices: ["Hyperlink and Text Markup Language", "Hyper Tool Markup Language", "High Text Markup Language", "Hyper Text Markup Language", "High Transfer Markup Language"], answer: "Hyper Text Markup Language" },
+  { question: "改行を含まない一行だけのテキストボックスを配置するタグは?", choices: ["div",
+  "a",
+  "input",
+  "table",
+  "section"], answer: "input" },
 
-  { question: "問題2", choices: ["選択肢1", "選択肢2", "選択肢3", "選択肢4", "選択肢5"], answer: "選択肢2" },
-  // ここに他の問題を追加
+  { question: "改行を含む複数行あるテキストボックスを配置するタグは?", choices: ["div",
+  "a",
+  "input",
+  "table",
+  "textarea"], answer: "textarea" },
+
+  { question: "テキストボックスの中に書いてほしいものを添えるタグは?", choices: ["label",
+  "a",
+  "input",
+  "table",
+  "textarea"], answer: "label" },
+
+  { question: "labelタグと入力部品を紐付ける属性は?", choices: ["id",
+  "type",
+  "for",
+  "disable",
+  "required"], answer: "for" },
+
+  { question: "labelタグと入力部品を属性を使わずに紐付けたい", choices: ["divで入力部品を囲う",
+  "pで入力部品を囲む",
+  "aで入力部品を囲む",
+  "labelで入力部品を囲む",
+  "hで入力部品を囲む"], answer: "labelで入力部品を囲む" },
+
+  { question: "入力されていないものにアラートを出したい", choices: ["id",
+  "type",
+  "for",
+  "disable",
+  "required"], answer: "required" },
+
+  { question: "入力部品に予め書いてほしいものを表示させたい時の属性?", choices: ["type",
+  "id",
+  "for",
+  "target",
+  "placeholder"], answer: "placeholder" },
+
+  { question: "checkboxを作るにはinputタグには何属性?", choices: ["type",
+  "id",
+  "for",
+  "type",
+  "placeholder"], answer: "type" },
+
+  { question: "checkboxを作るにはinputタグのtype属性の値は?", choices: ["checkbox",
+  "radio",
+  "id",
+  "type",
+  "placeholder"], answer: "checkbox" },
+
+  { question: "checkboxの全体をグループ化したい時タグは?", choices: ["p",
+  "code",
+  "a",
+  "input",
+  "fieldset"], answer: "fieldset" },
+
+  { question: "checkboxをグループ化したものに説明を加えたい場合のタグは?", choices: ["p",
+  "code",
+  "legend",
+  "input",
+  "fieldset"], answer: "legend" },
+
+  { question: "radioボタンを配置したい時inputタグ内の属性は?", choices: ["type",
+  "name",
+  "id",
+  "disable",
+  "required"], answer: "type" },
+
+  { question: "radioボタンを配置したい時inputタグ内のtype属性は?", choices: ["checkbox",
+  "submit",
+  "radio",
+  "disable",
+  "required"], answer: "radio" },
+
+  { question: "radioボタンを一つしか選択できなくする時inputタグ内の属性は?", choices: ["一つだけname属性をつける",
+  "全てに同じname属性をつける",
+  "radioなら元々一つしか選択できない",
+  "最初と最後にだけname属性をつける",
+  "特に何もしない"], answer: "全てに同じname属性をつける" },
+
+  { question: "ドロップダウンリストを作りたい時何のタグは?", choices: ["select",
+  "option",
+  "a",
+  "p",
+  "table"], answer: "select" },
+
+  { question: "ドロップダウンリストを作りたい時selectタグの中のタグは?", choices: ["select",
+  "option",
+  "a",
+  "p",
+  "table"], answer: "option" },
+
+  { question: "ドロップダウンリストを複数行表示したい時selectの属性は?", choices: ["name",
+  "type",
+  "id",
+  "size",
+  "指定なし"], answer: "size" },
+
+  { question: "ドロップダウンリストを複数選択したい時、属性の値は?", choices: ["name",
+  "type",
+  "id",
+  "size",
+  "multiple"], answer: "multiple" },
+
+  { question: "属性と属性の値が同じの時省略できますか?", choices: ["できる",
+  "できない",
+  "*",
+  "*",
+  "*"], answer: "できる" },
+
+  { question: "ボタンを作るときinputタグを使用せず作るには?", choices: ["input",
+  "button",
+  "div",
+  "a",
+  "p"], answer: "button" },
+
+  { question: "ボタンを配置したいときbottonタグを使用せず作るには?", choices: ["input",
+  "button",
+  "div",
+  "a",
+  "p"], answer: "input" },
+
+  { question: "ボタンでinputタグを使用した時type属性の値は?", choices: ["input",
+  "button",
+  "div",
+  "submit",
+  "p"], answer: "submit" },
+
+  { question: "ボタンでinputタグを使用した時テキストを変更する際の属性は?", choices: ["input",
+  "button",
+  "value",
+  "submit",
+  "p"], answer: "value" },
+
+  { question: "inputタグに最初からテキストを指定したい時の属性は?", choices: ["input",
+  "button",
+  "value",
+  "submit",
+  "p"], answer: "value" },
+
+  { question: "checkboxに最初から選択済みにする時の属性は?", choices: ["input",
+  "button",
+  "value",
+  "submit",
+  "checked"], answer: "checked" },
+
+  { question: "ドロップダウンリストに最初から選択済みにする時の属性は?", choices: ["input",
+  "button",
+  "value",
+  "selected",
+  "checked"], answer: "selected" },
+
+  { question: "buttonを無効化したい時何属性を指定すればいいですか?", choices: ["disabled",
+  "button",
+  "value",
+  "selected",
+  "checked"], answer: "disabled" },
+
+  { question: "パスワードを入力する部品を書きたい時inputタグのtype属性は?", choices: ["password",
+  "button",
+  "value",
+  "selected",
+  "checked"], answer: "password" },
+
+  { question: "数値を入力する部品を書きたい時inputタグのtype属性は?", choices: ["password",
+  "button",
+  "value",
+  "number",
+  "checked"], answer: "number" },
+
+  { question: "日付を入力する部品を書きたい時inputタグのtype属性は?", choices: ["password",
+  "button",
+  "value",
+  "number",
+  "date"], answer: "date" },
 ];
 let currentQuestionIndex = 0;
 let correctCount = 0;
@@ -61,7 +236,7 @@ function nextQuestion() {
 
 function showResult() {
   const quizContainer = document.getElementById('quiz-container');
-  quizContainer.innerHTML = `<h1>結果発表</h1><p>${questions.length}問中<span>${correctCount}問</span>正解!!</p><br><a class="quiz-r-btn" href="quiz-1.html">もう一度する</a>`;
+  quizContainer.innerHTML = `<h1>結果発表</h1><p>${questions.length}問中<span>${correctCount}問</span>正解!!</p><br><a class="quiz-r-btn" href="quiz-2.html">もう一度する</a>`;
 }
 
 displayQuestion(0);
