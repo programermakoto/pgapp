@@ -1,7 +1,7 @@
 const questions = [
     // 1
     {
-      question: "HTMLにjsを読み込むには何タグをしようすればいいでしょうか?", choices: [
+      question: "HTMLにjsを読み込むには何タグ?", choices: [
         "stylesheet",
         "css",
         "script",
