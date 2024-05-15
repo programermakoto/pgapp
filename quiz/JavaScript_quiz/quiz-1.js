@@ -1,33 +1,97 @@
 const questions = [
-  { question: "scriptタグの書き方で当てはまるものは?", choices: ["<script>",
-  "</script>",
-  "<script></script> ",
-  "@mediaqueries",
-  "queries"], answer: "@media()" },
+    // 1
+    {
+      question: "HTMLにjsを読み込むには何タグをしようすればいいでしょうか?", choices: [
+        "stylesheet",
+        "css",
+        "script",
+        "string",
+        "strict"], answer: "script"
+    },
+    // 2
+    {
+      question: "コンソールにて処理を表示させたい", choices: [
+        "string",
+        "prompt",
+        "printf",
+        "scanf",
+        "console.log"], answer: "console.log"
+    },
+    // 3
+    {
+      question: "コンソールにて処理を表示させたい", choices: [
+        "string",
+        "prompt",
+        "printf",
+        "scanf",
+        "console.log"], answer: "console.log"
+    },
+    // 4
+    {
+      question: "演算にて余を出したい時の演算子は?", choices: [
+        "+",
+        "*",
+        "%",
+        "/",
+        "-"], answer: "%"
+    },
+    // 5
+    {
+      question: "定数を定義したい", choices: [
+        "console",
+        "let",
+        "const",
+        "prompt",
+        "scanf"], answer: "const"
+    },
+    // 6
+    {
+      question: "変数を定義したい", choices: [
+        "console",
+        "let",
+        "const",
+        "prompt",
+        "scanf"], answer: "let"
+    },
+    // 7
+    {
+      question: "条件分岐をしたい", choices: [
+        "if",
+        "for",
+        "while",
+        "prompt",
+        "scanf"], answer: "if"
+    },
+     // 8
+     {
+      question: "繰り返し処理をしたい", choices: [
+        "if",
+        "for",
+        "let",
+        "prompt",
+        "scanf"], answer: "for"
+    },
+    // 9
+    {
+      question: "否定を意味する論理演算子は?", choices: [
+        "&&",
+        "||",
+        "!=",
+        "==",
+        "*"], answer: "!="
+    },
+  
+    // 10
+    {
+      question: "否定を意味する論理演算子は?", choices: [
+        "&&",
+        "||",
+        "!=",
+        "==",
+        "*"], answer: "!="
+    },
 
-  { question: "jsを書く際ファイル名の.の後は?", choices: [".css",
-  ".html",
-  ".c",
-  ".js",
-  ".java"], answer: ".js" },
 
-  { question: "htmlでjsファイルを読み込むとき属性は?", choices: ["src",
-  "ref",
-  "href",
-  ".js",
-  ".java"], answer: ".js" },
-
-  { question: "コンソールに結果を表示させたい", choices: ["console()",
-  "include()",
-  "scan()",
-  "console.log()",
-  "string"], answer: "console.log" },
-
-  { question: "10の何乗としたい時の記号は?", choices: ["@",
-  "e",
-  "2",
-  "*",
-  "/"], answer: "e" },
 ];
 let currentQuestionIndex = 0;
 let correctCount = 0;
