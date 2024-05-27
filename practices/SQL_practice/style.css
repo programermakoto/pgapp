@@ -1,0 +1,12 @@
+.main{
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.main h2{
+  padding: 20px;
+}
+.main ul li{
+  padding: 10px 0;
+}
