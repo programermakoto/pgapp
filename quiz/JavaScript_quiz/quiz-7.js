@@ -1,98 +1,126 @@
 const questions = [
   // 1
   {
-    question: "一定周期ごとに繰り返し実行したい", choices: [
+    question: "一定周期ごとに繰り返し実行したい", 
+    choices: [
       "prompt",
       "setInterval",
       "createElement",
       "toLocaleString",
-      "textContent"], answer: "setInterval"
+      "textContent"
+    ], 
+    answer: "setInterval" // 正しいまま
   },
   // 2
   {
-    question: "一定時間後に一度だけ実行したい", choices: [
-      "setTimeOut",
+    question: "一定時間後に一度だけ実行したい", 
+    choices: [
+      "setTimeout",
       "new Date",
       "createElement",
       "toLocaleString",
-      "textContent"], answer: "setTimeOut"
+      "textContent"
+    ], 
+    answer: "setTimeout" // 修正: `setTimeOut` → `setTimeout`
   },
   // 3
   {
-    question: "setInterval終了させたい", choices: [
+    question: "setInterval終了させたい", 
+    choices: [
       "getFullYear",
       "getDate",
       "getMonth",
       "getHours",
-      "clearInterval"], answer: "clearInterval"
+      "clearInterval"
+    ], 
+    answer: "clearInterval" // 正しいまま
   },
   // 4
   {
-    question: "アロー関数でsetTimeoutを3秒後に設定したい", choices: [
+    question: "アロー関数でsetTimeoutを3秒後に設定したい", 
+    choices: [
       "3",
       "30",
       "300",
       "3000",
-      "30000"], answer: "3000"
+      "30000"
+    ], 
+    answer: "3000" // 正しいまま
   },
   // 5
   {
-    question: "3秒後に別ページに移動したい", choices: [
+    question: "3秒後に別ページに移動したい", 
+    choices: [
       "window.location.href",
       "getDate",
       "getMonth",
       "createElement",
-      "toLocaleString"], answer: "getDate"
+      "toLocaleString"
+    ], 
+    answer: "window.location.href" // 修正: `getDate` → `window.location.href`
   },
   // 6
   {
-    question: "実行時間によっては処理が重なることがあるのは?", choices: [
-      "setTimeOut",
+    question: "実行時間によっては処理が重なることがあるのは?", 
+    choices: [
+      "setTimeout",
       "setInterval",
       "createElement",
       "toLocaleString",
-      "textContent"], answer: "setInterval"
+      "textContent"
+    ], 
+    answer: "setInterval" // 正しいまま
   },
   // 7
   {
-    question: "setTimeoutを終了させたい", choices: [
-      "setTimeOut",
+    question: "setTimeoutを終了させたい", 
+    choices: [
+      "setTimeout",
       "setInterval",
       "clearTimeout",
       "toLocaleString",
-      "textContent"], answer: "clearTimeout"
+      "textContent"
+    ], 
+    answer: "clearTimeout" // 正しいまま
   },
-   // 8
-   {
-    question: "clearTimeoutには何を指定しますか?", choices: [
-      "属性",
+  // 8
+  {
+    question: "clearTimeoutには何を指定しますか?", 
+    choices: [
+      "ID",
       "タグ",
       "時間",
       "getHours",
-      "getSeconds"], answer: "属性"
+      "getSeconds"
+    ], 
+    answer: "ID" // 修正: `属性` → `ID`
   },
   // 9
   {
-    question: "ボタンを押すたび再代入される", choices: [
+    question: "ボタンを押すたび再代入される", 
+    choices: [
       "getFullYear",
       "getMinutes",
       "getMonth",
       "getHours",
-      "getMilliseconds"], answer: "getMilliseconds"
+      "getMilliseconds"
+    ], 
+    answer: "getMilliseconds" // 正しいまま
   },
-
   // 10
   {
-    question: "分を取得したい", choices: [
+    question: "曜日を取得したい", 
+    choices: [
       "getDay",
       "getMinutes",
       "getMonth",
       "getHours",
-      "getMilliseconds"], answer: "getDay"
-  },
-
-
+      "getMilliseconds"
+    ], 
+    answer: "getDay" // 修正: 問題文を「分を取得したい」→「曜日を取得したい」に変更
+  }
 ];
+
 let currentQuestionIndex = 0;
 let correctCount = 0;
 

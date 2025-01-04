@@ -1,98 +1,126 @@
 const questions = [
   // 1
   {
-    question: "ユーザーから入力を取得したい", choices: [
+    question: "ユーザーから入力を取得したい", 
+    choices: [
       "prompt",
       "addEventListener",
       "createElement",
       "classList.add",
-      "textContent"], answer: "querySlecter"
+      "textContent"
+    ], 
+    answer: "prompt" // 修正: 正しい回答は "prompt"
   },
   // 2
   {
-    question: "少数の桁を指定したい", choices: [
+    question: "少数の桁を指定したい", 
+    choices: [
       "toFixed",
       "To",
       "prompt",
       "number",
-      "content"], answer: "toFixed"
+      "content"
+    ], 
+    answer: "toFixed" // 正しいまま
   },
   // 3
   {
-    question: "taroが含まれる配列を取りたい", choices: [
-      "querySlecter",
+    question: "taroが含まれる配列を取りたい", 
+    choices: [
+      "querySelector",
       "includes",
       "createElement",
       "classList.add",
-      "textContent"], answer: "includes"
+      "textContent"
+    ], 
+    answer: "includes" // 修正: "querySlecter" → "querySelector" のスペル修正
   },
   // 4
   {
-    question: "配列の文字を指定数だけ切り出したい", choices: [
+    question: "配列の文字を指定数だけ切り出したい", 
+    choices: [
       "slice",
       "split",
       "createElement",
       "place",
-      "price"], answer: "slice"
+      "price"
+    ], 
+    answer: "slice" // 正しいまま
   },
   // 5
   {
-    question: "指定したい文字を空白に置き換えたい", choices: [
+    question: "指定したい文字を空白に置き換えたい", 
+    choices: [
       "slice",
       "split",
       "createElement",
       "replace",
-      "price"], answer: "replace"
+      "price"
+    ], 
+    answer: "replace" // 正しいまま
   },
   // 6
   {
-    question: "文字数分だけ*を表示したい", choices: [
+    question: "文字数分だけ*を表示したい", 
+    choices: [
       "slice",
       "split",
       "repeat",
       "replace",
-      "price"], answer: "repeat"
+      "price"
+    ], 
+    answer: "repeat" // 正しいまま
   },
   // 7
   {
-    question: "2文字に満たない場合空白を追加したい", choices: [
+    question: "2文字に満たない場合空白を追加したい", 
+    choices: [
       "slice",
       "padStart",
       "repeat",
       "replace",
-      "padEnd"], answer: "padStart"
+      "padEnd"
+    ], 
+    answer: "padStart" // 正しいまま
   },
-   // 8
-   {
-    question: "2文字に満たない場合後ろに空白を追加したい", choices: [
+  // 8
+  {
+    question: "2文字に満たない場合後ろに空白を追加したい", 
+    choices: [
       "slice",
       "padStart",
       "repeat",
       "replace",
-      "padEnd"], answer: "padEnd"
+      "padEnd"
+    ], 
+    answer: "padEnd" // 正しいまま
   },
   // 9
   {
-    question: "数字を文字列に変換したい", choices: [
+    question: "数字を文字列に変換したい", 
+    choices: [
       "String",
       "appendChild",
       "createElement",
       "Stripe",
-      "insertBefore"], answer: "String"
+      "insertBefore"
+    ], 
+    answer: "String" // 正しいまま
   },
-
   // 10
   {
-    question: "配列の個数を表すものは?", choices: [
+    question: "配列の個数を表すものは?", 
+    choices: [
       "confirm",
       "length",
       "prompt",
       "scanf",
-      "double"], answer: "length"
-  },
-
-
+      "double"
+    ], 
+    answer: "length" // 正しいまま
+  }
 ];
+
 let currentQuestionIndex = 0;
 let correctCount = 0;
 

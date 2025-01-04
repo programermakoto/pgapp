@@ -11,7 +11,7 @@ const questions = [
   "table",
   "textarea"], answer: "textarea" },
 
-  { question: "テキストボックスの中に書いてほしいものを添えるタグは?", choices: ["label",
+  { question: "クリックで同じ要素内のBOXにフォーカス当てるタグは?", choices: ["label",
   "a",
   "input",
   "table",
@@ -53,7 +53,7 @@ const questions = [
   "type",
   "placeholder"], answer: "checkbox" },
 
-  { question: "checkboxの全体をグループ化したい時タグは?", choices: ["p",
+  { question: "checkboxの全体をグループ化したい時のタグは?", choices: ["p",
   "code",
   "a",
   "input",
@@ -77,7 +77,7 @@ const questions = [
   "disable",
   "required"], answer: "radio" },
 
-  { question: "radioボタンを一つしか選択できなくする時inputタグ内の属性は?", choices: ["一つだけname属性をつける",
+  { question: "ボタンを複数選択できなくする時inputタグ内の属性は?", choices: ["一つだけname属性をつける",
   "全てに同じname属性をつける",
   "radioなら元々一つしか選択できない",
   "最初と最後にだけname属性をつける",
@@ -95,11 +95,6 @@ const questions = [
   "p",
   "table"], answer: "option" },
 
-  { question: "ドロップダウンリストを複数行表示したい時selectの属性は?", choices: ["name",
-  "type",
-  "id",
-  "size",
-  "指定なし"], answer: "size" },
 
   { question: "ドロップダウンリストを複数選択したい時、属性の値は?", choices: ["name",
   "type",

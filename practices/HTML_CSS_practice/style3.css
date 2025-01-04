@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: rgb(220, 220, 220);
+    /* 横並びに */
+    display: flex;
+    /* 左右に分ける */
+    justify-content: space-between;
+    /*  内側余白をつける */
+    padding: 15px;
+}
+
+/* headerのなかのulに指定 */
+header ul {
+    /* 横並び */
+    display: flex;
+    /* ulの黒丸を消す */
+    list-style: none;
+    /* 横幅 */
+    width: 40%;
+}
+
+header ul li {
+    /* 幅がわからない時は背景色を付けるとわかりやすいかも！ */
+
+
+    /* 横幅 */
+    width: 100%;
+    /* 真ん中に文字を */
+    text-align: center;
+    /* 上下の文字の幅 */
+    line-height: 3;
+    /* 外の左右5pxの余白 */
+    margin: 0 5px;
+    /* 下線 */
+    border-bottom: 1px solid black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.main-image {
+    width: 90%;
+    height: 670px;
+    display: block;
+    margin: 0 auto;
+}
+
+main section {
+    background-color: rgba(223, 223, 223, 0.288);
+}
+
+article {
+    width: 80%;
+    margin: 0 auto;
+    /* 背景色の変更 */
+    background-color: rgba(255, 255, 255, 0.924);
+    text-align: center;
+    padding: 40px;
+}
+
+/* 追加親要素 */
+.parent {
+    /* 横幅追加 */
+    width: 100%;
+    /* 横並び */
+    display: flex;
+    /* ギャップで要素の間をつける */
+    gap: 6px;
+    /* 横幅が溢れたら下にずらす */
+    flex-wrap: wrap;
+    /* 内余白 */
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+}
+
+.parent div {
+    background-color: rgb(255, 255, 255);
+    /* div一つひとつの幅を割り当てる */
+    width: calc((100% - 12px) / 3);
+}
+
+/* articleのh1をスタイリング */
+article h1 {
+    background-color: black;
+    color: white;
+    width: 40%;
+    border-radius: 20px;
+    margin: 0px auto;
+}
+
+/* articleのh1をスタイリング */
+article p {
+    padding: 30px 0;
+    /* background-color: antiquewhite; */
+}
+
+/* pタグの文字を小さくする */
+.parent p {
+    font-size: 8px;
+}
+
+/* imgは丸くする、そして上下の外余白をつける */
+.parent img {
+    border-radius: 50px;
+    margin: 10px 0;
+}
+
+/* 実績編集 */
+#achievements div {
+    background-color: rgb(172, 172, 172);
+    width: 80%;
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+#form {
+    text-align: center;
+}
+
+/* inputとtexteareのスタイリング */
+#form input,
+textarea {
+    width: 80%;
+    padding: 10px 0;
+    text-align: center;
+}
+/* labelのスタイリング */
+#form label {
+    display: block;
+    margin: 30px 0;
+}
+
+.link {
+    display: block;
+    margin: 10px auto;
+    width: 30%;
+    text-align: center;
+    background-color: black;
+    padding: 10px 0px;
+    color: white;
+    text-decoration: none;
+}
+
+.last-p {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 10px;
+    padding: 10px 0;
+}

@@ -1,98 +1,66 @@
 const questions = [
-    // 1
-    {
-      question: "HTMLにjsを読み込むには何タグ?", choices: [
-        "stylesheet",
-        "css",
-        "script",
-        "string",
-        "strict"], answer: "script"
-    },
-    // 2
-    {
-      question: "コンソールにて処理を表示させたい", choices: [
-        "string",
-        "prompt",
-        "printf",
-        "scanf",
-        "console.log"], answer: "console.log"
-    },
-    // 3
-    {
-      question: "コンソールにて処理を表示させたい", choices: [
-        "string",
-        "prompt",
-        "printf",
-        "scanf",
-        "console.log"], answer: "console.log"
-    },
-    // 4
-    {
-      question: "演算にて余を出したい時の演算子は?", choices: [
-        "+",
-        "*",
-        "%",
-        "/",
-        "-"], answer: "%"
-    },
-    // 5
-    {
-      question: "定数を定義したい", choices: [
-        "console",
-        "let",
-        "const",
-        "prompt",
-        "scanf"], answer: "const"
-    },
-    // 6
-    {
-      question: "変数を定義したい", choices: [
-        "console",
-        "let",
-        "const",
-        "prompt",
-        "scanf"], answer: "let"
-    },
-    // 7
-    {
-      question: "条件分岐をしたい", choices: [
-        "if",
-        "for",
-        "while",
-        "prompt",
-        "scanf"], answer: "if"
-    },
-     // 8
-     {
-      question: "繰り返し処理をしたい", choices: [
-        "if",
-        "for",
-        "let",
-        "prompt",
-        "scanf"], answer: "for"
-    },
-    // 9
-    {
-      question: "否定を意味する論理演算子は?", choices: [
-        "&&",
-        "||",
-        "!=",
-        "==",
-        "*"], answer: "!="
-    },
-  
-    // 10
-    {
-      question: "否定を意味する論理演算子は?", choices: [
-        "&&",
-        "||",
-        "!=",
-        "==",
-        "*"], answer: "!="
-    },
-
-
+  // 1
+  {
+    question: "HTML に JavaScript を読み込むためのタグは?", 
+    choices: ["stylesheet", "css", "script", "string", "strict"], 
+    answer: "script"
+  },
+  // 2
+  {
+    question: "コンソールに処理を表示するメソッドは?", 
+    choices: ["string", "prompt", "printf", "scanf", "console.log"], 
+    answer: "console.log"
+  },
+  // 3
+  {
+    question: "余りを計算するための演算子は?", 
+    choices: ["+", "*", "%", "/", "-"], 
+    answer: "%"
+  },
+  // 4
+  {
+    question: "定数を定義するキーワードは?", 
+    choices: ["var", "let", "const", "define", "static"], 
+    answer: "const"
+  },
+  // 5
+  {
+    question: "変数を定義するキーワードは?", 
+    choices: ["var", "let", "const", "define", "static"], 
+    answer: "let"
+  },
+  // 6
+  {
+    question: "条件分岐を記述するキーワードは?", 
+    choices: ["if", "for", "switch", "while", "do-while"], 
+    answer: "if"
+  },
+  // 7
+  {
+    question: "繰り返し処理を記述するキーワードは?", 
+    choices: ["if", "for", "switch", "while", "do-while"], 
+    answer: "for"
+  },
+  // 8
+  {
+    question: "否定を意味する演算子は?", 
+    choices: ["&&", "||", "!=", "==", "!"], 
+    answer: "!="
+  },
+  // 9
+  {
+    question: "配列の要素数を取得するプロパティは?", 
+    choices: ["size", "length", "count", "items", "index"], 
+    answer: "length"
+  },
+  // 10
+  {
+    question: "関数を定義するためのキーワードは?", 
+    choices: ["function", "func", "method", "def", "declare"], 
+    answer: "function"
+  }
 ];
+
 let currentQuestionIndex = 0;
 let correctCount = 0;
 

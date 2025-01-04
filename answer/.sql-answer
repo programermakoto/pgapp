@@ -1,0 +1,95 @@
+⭐️SQL課題⭐️
+
+1. テーブルemployeesを作成してください。このテーブルには以下の列があります：
+    * id: INT型、主キー、自動増分
+    * name: VARCHAR(100)型、NULL値不可
+    * age: INT型
+    * department: VARCHAR(50)型
+
+
+2. 以下のデータをemployeesテーブルに挿入してください：
+    * (name: 'Alice', age: 30, department: 'HR')
+    * (name: 'Bob', age: 25, department: 'Engineering')
+    * (name: 'Charlie', age: 35, department: 'Marketing')
+
+
+3. employeesテーブルからすべてのデータを選択してください。
+
+
+4. ageが30以上の従業員を選択してください。
+
+
+5. nameが'Bob'である従業員のageを26に更新してください。
+
+
+6. departmentが'Marketing'である従業員を削除してください。
+
+
+7. employeesテーブルのageの平均値を計算してください。
+
+
+8. departmentごとの従業員の平均年齢を計算してください。
+
+
+9. employeesテーブルにemail列を追加し、VARCHAR(100)型で一意制約を設定してください。
+
+
+10. 以下の条件を満たすデータを選択してください：
+    * departmentが'HR'または'Engineering'であり、
+    * ageが28以上である。
+
+解答例
+
+問題1の解答
+
+CREATE TABLE employees ( id INT NOT NULL AUTO_INCREMENT, name VARCHAR(100) NOT NULL, age INT, department VARCHAR(50), PRIMARY KEY (id) );
+
+問題2の解答
+
+INSERT INTO employees (name, age, department) VALUES ('Alice', 30, 'HR'), ('Bob', 25, 'Engineering'), ('Charlie', 35, 'Marketing');
+
+問題3の解答
+
+SELECT * FROM employees;
+
+問題4の解答
+
+SELECT * FROM employees WHERE age >= 30;
+
+問題5の解答
+
+UPDATE employees SET age = 26 WHERE name = 'Bob';
+
+問題6の解答
+
+DELETE FROM employees WHERE department = 'Marketing';
+
+問題7の解答
+
+SELECT AVG(age) AS average_age FROM employees;
+
+問題8の解答
+
+SELECT department, AVG(age) AS average_age FROM employees GROUP BY department;
+
+問題9の解答
+
+ALTER TABLE employees ADD email VARCHAR(100) UNIQUE;
+
+問題10の解答
+
+SELECT * FROM employees WHERE department IN ('HR', 'Engineering') AND age >= 28;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

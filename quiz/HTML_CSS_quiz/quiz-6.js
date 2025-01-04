@@ -140,8 +140,8 @@ const questions = [
   { question: "bodyの高さを100%にしたい、どこの高さを100%にすればいい?", choices: ["body",
   "要素",
   "html",
-  "htmlとbody",
-  "元から100%"], answer: "htmlとbody" },
+  "body",
+  "元から100%"], answer: "body" },
 
   { question: "flex-itemをwidthのように指定したい、プロパティは?", choices: ["body",
   "flex",

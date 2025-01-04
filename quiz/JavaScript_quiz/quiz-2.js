@@ -1,98 +1,66 @@
 const questions = [
   // 1
   {
-    question: "関数を書く際どう定義しますか?", choices: [
-      "action",
-      "()",
-      "function",
-      "string",
-      "section"], answer: "function"
+    question: "関数を書く際、どのキーワードで定義しますか?", 
+    choices: ["action", "()", "function", "string", "section"], 
+    answer: "function"
   },
   // 2
   {
-    question: "例外もあるがfunctionの後は何を書きますか?", choices: [
-      "関数名",
-      "変数名",
-      "定数名",
-      "HTML",
-      "何も書かない"], answer: "関数名"
+    question: "function キーワードの後には通常何を書きますか?", 
+    choices: ["関数名", "変数名", "定数名", "HTML", "何も書かない"], 
+    answer: "関数名"
   },
   // 3
   {
-    question: "一部では省略できますが関数の結果は?", choices: [
-      "let",
-      "return",
-      "prompt",
-      "scanf",
-      "console.log"], answer: "return"
+    question: "関数の実行結果を返すために使用するキーワードは?", 
+    choices: ["let", "return", "prompt", "scanf", "console.log"], 
+    answer: "return"
   },
   // 4
   {
-    question: "仮引数は関数側でしようするものですか?", choices: [
-      "yes",
-      "no",
-      "*",
-      "*",
-      "*"], answer: "yes"
+    question: "仮引数は、関数内部で使用するためのものですか?", 
+    choices: ["yes", "no", "不明", "場合による", "関係ない"], 
+    answer: "yes"
   },
   // 5
   {
-    question: "関数式の末尾につける記号は?", choices: [
-      ";",
-      ":",
-      ".",
-      "`",
-      "*"], answer: ";"
+    question: "関数式の末尾につける記号は?", 
+    choices: [";", ":", ".", "`", ","], 
+    answer: ";"
   },
   // 6
   {
-    question: "定義した関数を使う時関数名の後ろは?", choices: [
-      "{}",
-      "[]",
-      "()",
-      "<>",
-      "**"], answer: "()"
+    question: "定義した関数を呼び出す際、関数名の後につける記号は?", 
+    choices: ["{}", "[]", "()", "<>", "**"], 
+    answer: "()"
   },
   // 7
   {
-    question: "仮引数を複数定義したい時どの記号で区切りますか?", choices: [
-      "+",
-      "*",
-      "!",
-      "@",
-      ","], answer: ","
+    question: "仮引数を複数定義する場合、どの記号で区切りますか?", 
+    choices: ["+", "*", "!", "@", ","], 
+    answer: ","
   },
-   // 8
-   {
-    question: "引数として関数を指定したい場合関数名の後ろは?", choices: [
-      "()",
-      "[]",
-      "{}",
-      "<>",
-      "何もつけない"], answer: "何もつけない"
+  // 8
+  {
+    question: "引数として関数を指定する際、関数名の後につけない記号はどれですか?", 
+    choices: ["()", "[]", "{}", "<>", "何もつけない"], 
+    answer: "何もつけない"
   },
   // 9
   {
-    question: "関数で=>が付くものは何関数ですか?", choices: [
-      "アロー関数",
-      "アホー関数",
-      "セル関数",
-      "矢関数",
-      "弓関数"], answer: "アロー関数"
+    question: "関数で `=>` を使うものは何関数ですか?", 
+    choices: ["アロー関数", "アホー関数", "セル関数", "矢関数", "弓関数"], 
+    answer: "アロー関数"
   },
-
   // 10
   {
-    question: "引数にデフォルト値を設定するには?", choices: [
-      "=",
-      "!",
-      "^",
-      "e",
-      "~"], answer: "="
-  },
-
-
+    question: "引数にデフォルト値を設定するには、どの記号を使用しますか?", 
+    choices: ["=", "!", "^", "e", "~"], 
+    answer: "="
+  }
 ];
+
 let currentQuestionIndex = 0;
 let correctCount = 0;
 

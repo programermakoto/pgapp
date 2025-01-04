@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- lang="en"からjaにしておきましょう -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML&CSS</title>
+    <!-- タイトルを作りましょう。タイトルはサイトの上に表示されます -->
+    <link rel="icon" href="/images/aclogo.png">
+    <!-- <link rel="icon" href="/images/aclogo.png">はタイトルの横に画像でアイコンを貼れます -->
+</head>
+<!-- headerはHTMLの設定部分でいろんな設定をかけます -->
+
+<body>
+    <!-- header -->
+    <header id="back">
+        <h1>山田太郎</h1>
+        <ul>
+            <li><a href="#about">私について</a></li>
+            <li><a href="#skill">スキル</a></li>
+            <li><a href="#achievements">実績</a></li>
+            <li><a href="#form">問い合わせ</a></li>
+        </ul>
+    </header>
+    <!-- main -->
+    <main>
+        <img src="/images/kk_ears.jpg" alt="自分の写真" style="width: 100%;">
+        <!-- src="/images/kk_ears.jpg"は画像のリンクを貼ります -->
+        <!-- alt="自分の写真"は写真が出なかった時に言葉が出る様になります -->
+        <!-- style="width: 100%;"はHTML上でCSSを書くときにこの様に書きます。(ちなみにこのコードは横幅を画面いっぱいで埋める設定です) -->
+        <section>
+            <!-- sectionは大枠でコードを見やすくできます。更にarticleでその中の項目を更に分ける為 -->
+            <article>
+                <h1>ポートフォリオについて</h1>
+                <p>このポートフォリオのサイトは私のスキルと実績を皆さんに共有できるサイト制作をしました。<br>
+                    <mark>HTMLとCSSの言語のみで作成できるサイトは自信があります。</mark><br>
+                    なので<b><u>企業HPの依頼がありましたら</u></b>お問い合わせお願いします。
+                </p>
+            </article>
+            <article id="about">
+                <h1>私のについて</h1>
+                <p>私はエンジニアとして1年仕事をしています。<br>
+                    今私はHTMLとCSSを学びJavaScriptを学習しようとしています。<br>
+                    <mark>SEO対策とレイアウト調整、デザインの自信はあります</mark>。まだまだアプリで学習ですが共同作業できる様に知識をつけていきます。
+                </p>
+            </article>
+            <article id="skill">
+                <h1>スキルについて</h1>
+                <p>取得言語についてわかりやすく説明いたします。<br>プログラミングには目的を設定をして作りたいものに対してどういう言語を学べば作りあげれるのか理解しないといけないです。<br>その時私が必要な言語を取得したのが下記の言語です。この言語を取得して作成したHP(ホームページ)が更にその下の実績の項目で閲覧できる様になっています。
+                </p>
+                <div>
+                    <h2>HTML&CSS</h2>
+                    <!-- 下記のPタグは英語ですが何を書いたら良いかわからないが文字は適当に入れたい場合『lorem30』と書くと30文字の英文が作られる。 -->
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, blanditiis cum! Quia eaque
+                        mollitia eos molestias illo id vel assumenda.</p>
+                    <img src=" /images/htmlcss.webp" style="width: 50%;">
+                </div>
+                <div>
+                    <h2>JS</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, blanditiis cum! Quia eaque
+                        mollitia eos
+                        molestias illo id vel assumenda.</p>
+                    <img src="/images/js.jpg" style="width: 50%;">
+                </div>
+                <div>
+                    <h2>Git</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, blanditiis cum! Quia eaque
+                        mollitia eos
+                        molestias illo id vel assumenda.</p>
+                    <img src="/images/git.jpg" style="width: 50%;">
+                </div>
+                <div>
+                    <h2>SQL</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, blanditiis cum! Quia eaque
+                        mollitia eos
+                        molestias illo id vel assumenda.</p>
+                    <img src="/images/sql.jpg" style="width: 50%;">
+                </div>
+                <div>
+                    <h2>PHP</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, blanditiis cum! Quia eaque
+                        mollitia eos
+                        molestias illo id vel assumenda.</p>
+                    <img src="/images/php.jpg" style="width: 50%;">
+                </div>
+            </article>
+            <article id="achievements">
+                <h1>実績について</h1>
+                <p>私がこれまでについて作成したHPを紹介します。</p>
+                <div>
+                    <h2>ポートフォリオ</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam magnam, illo dicta explicabo
+                        ipsum
+                        quisquam? Explicabo, esse voluptate nam, rerum omnis sapiente, inventore nobis aliquid quis rem
+                        nesciunt! Iste, optio.
+                    </p>
+                    <a href="https://code-jump.com/demo/html/profile/">ポートフォリオサイトを閲覧する</a>
+                    <!-- aタグにhref="https://code-jump.com/demo/html/profile/"を書けばいきたいページに飛べる -->
+                </div>
+                <div>
+                    <h2>ECサイト</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam magnam, illo dicta explicabo
+                        ipsum
+                        quisquam? Explicabo, esse voluptate nam, rerum omnis sapiente, inventore nobis aliquid quis rem
+                        nesciunt! Iste, optio.
+                    </p>
+                        <a href="https://code-jump.com/demo/html/store2/">ショッピングサイトを閲覧する</a>
+                </div>
+                <div>
+                    <h2>スニーカサイト</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam magnam, illo dicta explicabo
+                        ipsum
+                        quisquam? Explicabo, esse voluptate nam, rerum omnis sapiente, inventore nobis aliquid quis rem
+                        nesciunt! Iste, optio.
+                    </p>
+                        <a href="https://code-jump.com/demo/html/media/">スニーカー販売サイトを閲覧する</a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer id="form">
+        <h2>お問い合わせFORM</h2>
+        <small>全て埋めて送信ボタンを押して問い合わせください</small>
+        <!-- 一番小さい文字で作成するタグ -->
+        <hr>
+        <label>
+            <p>名前</p>
+            <input type="text" placeholder="フルネームで名前を書いて下さい">
+        </label>
+        <!-- labelタグは中にある文字をクリックするとinputやtextareaにフォーカスされる-->
+         <!-- placeholderはユーザーに伝えるコメントで手助けをできる -->
+        <label>
+            <p>メールアドレス</p>
+            <input type="text" placeholder="PCメールアドレスを書いて下さい">
+        </label>
+        <label>
+            <p>質問</p>
+            <textarea rows="10" cols="70" placeholder="聞きたい質問を書いて下さい"></textarea>
+        </label>
+    </footer>
+    <hr>
+    <a href="#back">TOPに戻る</a>
+    <!-- #と名前を書くと id属性の同じ名前のタグへ飛ぶ -->
+    <p>山田太郎の公式ホームページ@All company</p>
+</body>
+
+</html>

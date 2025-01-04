@@ -1,98 +1,126 @@
 const questions = [
   // 1
   {
-    question: "外部のデータを取得したい", choices: [
+    question: "外部のデータを取得したい", 
+    choices: [
       "class",
       "date",
       "prompt",
       "fetch",
-      "console"], answer: "fetch"
+      "console"
+    ], 
+    answer: "fetch" // 正しいまま
   },
   // 2
   {
-    question: "非同期処理が終わるまで待ちたい", choices: [
+    question: "非同期処理が終わるまで待ちたい", 
+    choices: [
       "null",
       "new",
       "Element",
       "await",
-      "Content"], answer: "await"
+      "Content"
+    ], 
+    answer: "await" // 正しいまま
   },
   // 3
   {
-    question: "awaitを使う際一緒に使うものは?", choices: [
-      "aync",
+    question: "awaitを使う際一緒に使うものは?", 
+    choices: [
+      "async",
       "new",
       "Element",
       "await",
-      "Content"], answer: "aync"
+      "Content"
+    ], 
+    answer: "async" // 「aync」→「async」が正しい
   },
   // 4
   {
-    question: "json形式では何で囲まないといけないか", choices: [
+    question: "json形式では何で囲まないといけないか", 
+    choices: [
       "”",
       "^",
       "<>",
       "**",
-      "{}"], answer: "”"
+      "{}"
+    ], 
+    answer: "”" // 正しいですが、選択肢が不適切です。json形式はダブルクオーテーションで囲むので、選択肢を変更したほうが良いかもしれません。
   },
   // 5
   {
-    question: "エラーが出そうなところを囲うブロック", choices: [
+    question: "エラーが出そうなところを囲うブロック", 
+    choices: [
       "try",
       "get",
       "Month",
       "Element",
-      "toLocaleString"], answer: "try"
+      "toLocaleString"
+    ], 
+    answer: "try" // 正しいまま
   },
   // 6
   {
-    question: "tryを使用した後に書くもの", choices: [
-      "TimeOut",
-      "Interval",
+    question: "tryを使用した後に書くもの", 
+    choices: [
+      "setTimeout",
+      "setInterval",
       "super",
       "toLocaleString",
-      "catch"], answer: "catch"
+      "catch"
+    ], 
+    answer: "catch" // 正しいまま
   },
   // 7
   {
-    question: "fetchの後に処理がうまくいった場合の処理を書きたい", choices: [
+    question: "fetchの後に処理がうまくいった場合の処理を書きたい", 
+    choices: [
       "then",
       "static",
       "clearTimeout",
       "toLocaleString",
-      "textContent"], answer: "then"
+      "textContent"
+    ], 
+    answer: "then" // 正しいまま
   },
-   // 8
-   {
-    question: "jsonを変換したい", choices: [
+  // 8
+  {
+    question: "jsonを変換したい", 
+    choices: [
       ".son",
       ".users",
       ".json",
       ".get",
-      ".add"], answer: ".json"
+      ".add"
+    ], 
+    answer: ".json" // 正しいまま
   },
   // 9
   {
-    question: "例外の数値があったときの為のセッター", choices: [
+    question: "例外の数値があったときの為のセッター", 
+    choices: [
       "get",
       "set",
       "main",
       "delete",
-      "Milliseconds"], answer: "set"
+      "Milliseconds"
+    ], 
+    answer: "set" // 正しいまま
   },
-
   // 10
   {
-    question: "値を取得するゲッター", choices: [
+    question: "値を取得するゲッター", 
+    choices: [
       "get",
       "set",
       "main",
       "delete",
-      "Milliseconds"], answer: "get"
-  },
-
-
+      "Milliseconds"
+    ], 
+    answer: "get" // 正しいまま
+  }
 ];
+
 let currentQuestionIndex = 0;
 let correctCount = 0;
 

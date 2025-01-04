@@ -1,98 +1,66 @@
 const questions = [
   // 1
   {
-    question: "配列の一番目を指定したい際[i]は何番?", choices: [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4"], answer: "0"
+    question: "配列の最初の要素を取得する際、添字 [i] は何番ですか?", 
+    choices: ["0", "1", "2", "3", "4"], 
+    answer: "0"
   },
   // 2
   {
-    question: "配列の末尾に値を追加したい時", choices: [
-      "pop",
-      "unshift",
-      "shift",
-      "push",
-      "pull"], answer: "push"
+    question: "配列の末尾に値を追加するメソッドはどれですか?", 
+    choices: ["pop", "unshift", "shift", "push", "pull"], 
+    answer: "push"
   },
   // 3
   {
-    question: "オブジェクトを定義する際のカッコは?", choices: [
-      "{}",
-      "[]",
-      "()",
-      "<>",
-      "**"], answer: "{}"
+    question: "オブジェクトを定義する際に使用する括弧はどれですか?", 
+    choices: ["{}", "[]", "()", "<>", "**"], 
+    answer: "{}"
   },
   // 4
   {
-    question: "オブジェクトのプロパティを消したい", choices: [
-      "remove",
-      "delete",
-      "add",
-      "return",
-      "-"], answer: "delete"
+    question: "オブジェクトから特定のプロパティを削除するには、どのキーワードを使用しますか?", 
+    choices: ["remove", "delete", "add", "return", "-"], 
+    answer: "delete"
   },
   // 5
   {
-    question: "オブジェクトを配列にしたい", choices: [
-      "Object.entries",
-      "object.entries",
-      "object",
-      "o.e",
-      "entries"], answer: "Object.entries"
+    question: "オブジェクトをキーと値の配列に変換するメソッドはどれですか?", 
+    choices: ["Object.entries", "object.entries", "object", "o.e", "entries"], 
+    answer: "Object.entries"
   },
   // 6
   {
-    question: "配列の間に要素を追加したい", choices: [
-      "space",
-      "split",
-      "splice",
-      "shift",
-      "sheet"], answer: "splice"
+    question: "配列の途中に要素を追加または削除するメソッドはどれですか?", 
+    choices: ["space", "split", "splice", "shift", "sheet"], 
+    answer: "splice"
   },
   // 7
   {
-    question: "配列の中身を｜を使って区切りたい", choices: [
-      "add",
-      "push",
-      "!",
-      "join",
-      "pull"], answer: "join"
+    question: "配列の要素を区切り文字（例: '|') で連結するメソッドはどれですか?", 
+    choices: ["add", "push", "!", "join", "pull"], 
+    answer: "join"
   },
-   // 8
-   {
-    question: "ある配列の各要素を処理して新しい配列を作る", choices: [
-      "map",
-      "pop",
-      "scanf",
-      "push",
-      "pull"], answer: "map"
+  // 8
+  {
+    question: "配列の各要素を処理して新しい配列を生成するメソッドはどれですか?", 
+    choices: ["map", "pop", "scanf", "push", "pull"], 
+    answer: "map"
   },
   // 9
   {
-    question: "配列から条件に合致するものだけ抽出したい", choices: [
-      "splice",
-      "filter",
-      "add",
-      "delete",
-      "colmon"], answer: "filter"
+    question: "配列から条件に合致する要素だけを抽出するメソッドはどれですか?", 
+    choices: ["splice", "filter", "add", "delete", "colmon"], 
+    answer: "filter"
   },
-
   // 10
   {
-    question: "配列の中に他配列の中身を一つずつ追加したい", choices: [
-      "...",
-      "***",
-      "^^^",
-      "+++",
-      "~~~"], answer: "..."
-  },
-
-
+    question: "配列の中に別の配列の要素を一つずつ展開して追加する際に使用する記号はどれですか?", 
+    choices: ["...", "***", "^^^", "+++", "~~~"], 
+    answer: "..."
+  }
 ];
+
 let currentQuestionIndex = 0;
 let correctCount = 0;
 

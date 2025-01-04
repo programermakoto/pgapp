@@ -6,7 +6,8 @@ const questions = [
       "git init",
       "git add",
       "git commit",
-      "git log"], answer: "git init"
+      "git log"
+    ], answer: "git init"
   },
   // 2
   {
@@ -15,7 +16,8 @@ const questions = [
       "git init",
       "git add",
       "git commit",
-      "git log"], answer: "git add"
+      "git log"
+    ], answer: "git add"
   },
   // 3
   {
@@ -24,7 +26,8 @@ const questions = [
       "git init",
       "git add",
       "git commit",
-      "git log"], answer: "git commit"
+      "git log"
+    ], answer: "git commit"
   },
   // 4
   {
@@ -33,7 +36,8 @@ const questions = [
       "git init",
       "git add",
       "git commit",
-      "git log"], answer: "git log"
+      "git log"
+    ], answer: "git log"
   },
   // 5
   {
@@ -42,7 +46,8 @@ const questions = [
       "-m",
       "-la",
       "-l",
-      "m"], answer: "-m"
+      "m"
+    ], answer: "-m"
   },
   // 6
   {
@@ -51,25 +56,28 @@ const questions = [
       "git init",
       "git add",
       "git commit",
-      "git log"], answer: "git status"
+      "git log"
+    ], answer: "git status"
   },
   // 7
   {
-    question: "テステージ見上げる前の変更を確認したい", choices: [
+    question: "ステージングエリアに上げる前の変更を確認したい", choices: [
       "git status",
       "git init",
       "git diff",
       "git commit",
-      "git log"], answer: "diff"
+      "git log"
+    ], answer: "git diff"
   },
-   // 8
-   {
+  // 8
+  {
     question: "過去に追加したところまで戻りたい", choices: [
       "git status",
       "git init",
       "git diff",
       "git checkout",
-      "git log"], answer: "git checkout"
+      "git log"
+    ], answer: "git checkout"
   },
   // 9
   {
@@ -78,21 +86,21 @@ const questions = [
       "git init",
       "git diff",
       "git checkout",
-      "git log"], answer: "git switch"
+      "git log"
+    ], answer: "git switch"
   },
-
   // 10
   {
-    question: "指定したファイル移行を削除したい", choices: [
+    question: "指定したファイル以降を削除したい", choices: [
       "git switch",
       "git init",
       "git diff",
       "git checkout",
-      "git reset"], answer: "git reset"
-  },
-
-
+      "git reset"
+    ], answer: "git reset"
+  }
 ];
+
 let currentQuestionIndex = 0;
 let correctCount = 0;
 

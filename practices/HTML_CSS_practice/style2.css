@@ -1,0 +1,72 @@
+/* 共通項目 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* header */
+header {
+    /* 背景色 */
+    background-color: rgb(220, 220, 220);
+}
+
+/* main */
+/* id名なら #から / class名なら.から指定 */
+.main-image {
+    /* 横幅調整 */
+    width: 90%;
+    /* 縦幅調整 */
+    height: 670px;
+    /* インラインブロックからブロック要素に変更(そうする事でmargin: 0 auto;が使用可能に) */
+    display: block;
+    /*全体が横幅100%-width:90%;は残り10%!その10%を左右に5%ずつ分て真ん中に持っていく */
+    margin: 0 auto;
+}
+
+main section {
+    /* 親要素に背景色 */
+    background-color: beige;
+}
+
+article{
+    /*  articleの横幅調整*/
+    width: 80%;
+    /*  article要素を真ん中に */
+    margin: 0 auto;
+    /* 親要素の子要素に背景色 */
+    background-color: bisque;
+    /* articleのなかの文字自体を真ん中に */
+    text-align: center;
+    /* 要素の内側で余白を作る */
+    padding: 40px;
+}
+
+
+#form{
+    text-align: center;
+}
+.link{
+    display:block;
+    /* 上下10px 左右真ん中 */
+    margin: 10px auto;
+    width: 30%;
+    text-align: center;
+    background-color: black;
+    padding: 10px 0px;
+    /* 文字の色を変える */
+    color: white;
+    /* アンダーライン(下線)noneでを消す */
+    text-decoration: none;
+}
+.last-p{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    /* 文字の横の間隔を開ける */
+    letter-spacing: 10px;
+    padding: 10px 0;
+}

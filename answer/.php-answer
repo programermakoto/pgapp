@@ -1,0 +1,104 @@
+⭐️PHP課題⭐️
+
+PHP課題１　ファイル作成時刻を出そう🔥
+http://localhost/PhpPractice/php1/hello.php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello PHP</title>
+</head>
+<body>
+    <?php
+    date_default_timezone_set('Asia/Tokyo');
+    echo "PHP課題1";
+    echo "<br>";
+    echo "作成時刻は" . date("Y年m月d日 H時i分s秒");
+    ?>
+</body>
+</html>
+PHP課題2　登録者さんにお礼を送信しよう🔥
+
+form.htmlファイル:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="process.php" method="post">
+        <label for="name">名前:</label>
+        <input type="text" id="name" name="name">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+process.phpファイル:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process Form</title>
+</head>
+<body>
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = htmlspecialchars($_POST["name"]);
+        echo "登録ありがとうございます, " . $name . "様";
+    }
+    ?>
+</body>
+</html>
+
+
+
+PHP課題3　足し算の合計を計算してもらおう🔥 
+calculator.htmlファイル:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <form action="calculate.php" method="post">
+        <label for="num1">Number 1:</label>
+        <input type="text" id="num1" name="num1">
+        <br>
+        <label for="num2">Number 2:</label>
+        <input type="text" id="num2" name="num2">
+        <br>
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+</html>
+
+calculator.phpファイル:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Result</title>
+</head>
+<body>
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $num1 = floatval($_POST["num1"]);
+        $num2 = floatval($_POST["num2"]);
+        $sum = $num1 + $num2;
+        echo "合計値 " . $num1 . " + " . $num2 . " = " . $sum . "です";
+    }
+    ?>
+</body>
+</html>

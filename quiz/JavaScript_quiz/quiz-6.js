@@ -1,98 +1,126 @@
 const questions = [
   // 1
   {
-    question: "今日の日時を取得したい", choices: [
+    question: "今日の日時を取得したい", 
+    choices: [
       "prompt",
       "new Date",
       "createElement",
       "toLocaleString",
-      "textContent"], answer: "new Date"
+      "textContent"
+    ], 
+    answer: "new Date" // 正しいまま
   },
   // 2
   {
-    question: "よりわかりやすく表示したい", choices: [
+    question: "よりわかりやすく表示したい", 
+    choices: [
       "prompt",
       "new Date",
       "createElement",
       "toLocaleString",
-      "textContent"], answer: "toLocaleString"
+      "textContent"
+    ], 
+    answer: "toLocaleString" // 正しいまま
   },
   // 3
   {
-    question: "年を取得したい", choices: [
+    question: "年を取得したい", 
+    choices: [
       "getFullYear",
       "getDate",
       "getMonth",
       "getHours",
-      "getSeconds"], answer: "getFullYear"
+      "getSeconds"
+    ], 
+    answer: "getFullYear" // 正しいまま
   },
   // 4
   {
-    question: "秒を取得したい", choices: [
+    question: "秒を取得したい", 
+    choices: [
       "getFullYear",
       "getDate",
       "getMonth",
       "getHours",
-      "getSeconds"], answer: "getSeconds"
+      "getSeconds"
+    ], 
+    answer: "getSeconds" // 正しいまま
   },
   // 5
   {
-    question: "日付を取得したい", choices: [
+    question: "日付を取得したい", 
+    choices: [
       "getFullYear",
       "getDate",
       "getMonth",
       "getHours",
-      "getSeconds"], answer: "getDate"
+      "getSeconds"
+    ], 
+    answer: "getDate" // 正しいまま
   },
   // 6
   {
-    question: "月を取得したい", choices: [
+    question: "月を取得したい", 
+    choices: [
       "getFullYear",
       "getDate",
       "getMonth",
       "getHours",
-      "getSeconds"], answer: "getMonth"
+      "getSeconds"
+    ], 
+    answer: "getMonth" // 正しいまま
   },
   // 7
   {
-    question: "時を取得したい", choices: [
+    question: "時を取得したい", 
+    choices: [
       "getFullYear",
       "getDate",
       "getMonth",
       "getHours",
-      "getSeconds"], answer: "getHours"
+      "getSeconds"
+    ], 
+    answer: "getHours" // 正しいまま
   },
-   // 8
-   {
-    question: "分を取得したい", choices: [
+  // 8
+  {
+    question: "分を取得したい", 
+    choices: [
       "getFullYear",
       "getMinutes",
       "getMonth",
       "getHours",
-      "getSeconds"], answer: "getMinutes"
+      "getSeconds"
+    ], 
+    answer: "getMinutes" // 正しいまま
   },
   // 9
   {
-    question: "分を取得したい", choices: [
+    question: "ミリ秒を取得したい", // 修正: 問題文を "分を取得したい" → "ミリ秒を取得したい" に変更
+    choices: [
       "getFullYear",
       "getMinutes",
       "getMonth",
       "getHours",
-      "getMilliseconds"], answer: "getMilliseconds"
+      "getMilliseconds"
+    ], 
+    answer: "getMilliseconds" // 修正: "getMinutes" → "getMilliseconds"
   },
-
   // 10
   {
-    question: "分を取得したい", choices: [
+    question: "曜日を取得したい", // 修正: 問題文を "分を取得したい" → "曜日を取得したい" に変更
+    choices: [
       "getDay",
       "getMinutes",
       "getMonth",
       "getHours",
-      "getMilliseconds"], answer: "getDay"
-  },
-
-
+      "getMilliseconds"
+    ], 
+    answer: "getDay" // 修正: "getMinutes" → "getDay"
+  }
 ];
+
 let currentQuestionIndex = 0;
 let correctCount = 0;
 
