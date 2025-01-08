@@ -1,12 +1,10 @@
-
-const promptName = prompt("What is your name?");
-
 document.getElementById('login-form').addEventListener('submit', function (event) {
     event.preventDefault();
-    const username = document.getElementById('username').value;
-    const userPassword = document.getElementById('password').value;
+
+    const tech = document.getElementById('password').value;
     const messageElement = document.getElementById('message');
-    if (username === promptName && userPassword === "Eishi") {
+
+    if (tech === "Eishi") {
         messageElement.textContent = 'ログイン成功！';
         messageElement.style.color = 'green';
         setTimeout(() => {
