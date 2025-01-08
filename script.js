@@ -4,7 +4,7 @@ document.getElementById('login-form').addEventListener('submit', function (event
     const tech = document.getElementById('password').value;
     const messageElement = document.getElementById('message');
 
-    if (tech === "Eishi") {
+    if (tech === "TECH") {
         messageElement.textContent = 'ログイン成功！';
         messageElement.style.color = 'green';
         setTimeout(() => {
