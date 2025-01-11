@@ -50,7 +50,7 @@ function checkAnswer(selected, correct) {
 }
 
 function nextQuestion() {
-  const feedbackElement = document.getElementById('feedback');
+  const feedbackElement = document.getElementById('btn');
   feedbackElement.textContent = '';
 
   if (currentQuestionIndex < questions.length - 1) {
@@ -65,5 +65,8 @@ function showResult() {
   const quizContainer = document.getElementById('quiz-container');
   quizContainer.innerHTML = `<h1>結果発表</h1><p>${questions.length}問中<span>${correctCount}問</span>正解!!</p><br><a class="quiz-r-btn" href="quiz-1.html">もう一度する</a>`;
 }
+
+
+
 
 displayQuestion(0);

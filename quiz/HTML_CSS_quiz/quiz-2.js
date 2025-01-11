@@ -185,53 +185,50 @@ function displayQuestion(questionIndex) {
   const choicesElement = document.getElementById('choices');
   choicesElement.innerHTML = '';
 
-  questionObj.choices.forEach((choice, index) => {
-      const li = document.createElement('li');
-      const button = document.createElement('button');
-      button.textContent = choice;
-      button.onclick = () => checkAnswer(choice, questionObj.answer);
-      li.appendChild(button);
-      choicesElement.appendChild(li);
+  questionObj.choices.forEach((choice) => {
+    const li = document.createElement('li');
+    const button = document.createElement('button');
+    button.textContent = choice;
+    button.onclick = () => checkAnswer(choice, questionObj.answer);
+    li.appendChild(button);
+    choicesElement.appendChild(li);
   });
 }
 
 function checkAnswer(selected, correct) {
   const feedbackElement = document.getElementById('feedback');
   if (selected === correct) {
-      feedbackElement.textContent = "正解です!!!!!!!!　おめでとうございます！";
-      correctCount++;
+    feedbackElement.textContent = "正解です！おめでとうございます！";
+    correctCount++;
   } else {
-      feedbackElement.textContent = `不正解! 答えは ${correct} です。`;
+    feedbackElement.textContent = `不正解！答えは「${correct}」です。`;
   }
 
-  if (currentQuestionIndex < questions.length - 1) {
-      currentQuestionIndex++;
-  } else {
-      showResult();
-      return;
-  }
-
+  // 2秒後に次の質問へ移動
   setTimeout(() => {
-      feedbackElement.textContent = '';
-      displayQuestion(currentQuestionIndex);
+    feedbackElement.textContent = '';
+    nextQuestion();
   }, 2000);
 }
 
 function nextQuestion() {
-  const feedbackElement = document.getElementById('feedback');
-  feedbackElement.textContent = '';
-
   if (currentQuestionIndex < questions.length - 1) {
-      currentQuestionIndex++;
-      displayQuestion(currentQuestionIndex);
+    currentQuestionIndex++;
+    displayQuestion(currentQuestionIndex);
   } else {
-      showResult();
+    showResult();
   }
 }
 
 function showResult() {
   const quizContainer = document.getElementById('quiz-container');
-  quizContainer.innerHTML = `<h1>結果発表</h1><p>${questions.length}問中<span>${correctCount}問</span>正解!!</p><br><a class="quiz-r-btn" href="quiz-2.html">もう一度する</a>`;
+  quizContainer.innerHTML = `
+    <h1>結果発表</h1>
+    <p>${questions.length}問中<span>${correctCount}問</span>正解！</p>
+    <br>
+    <a class="quiz-r-btn" href="quiz-1.html">もう一度する</a>
+  `;
 }
 
+// 初期問題表示
 displayQuestion(0);

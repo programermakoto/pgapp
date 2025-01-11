@@ -193,22 +193,30 @@ function checkAnswer(selected, correct) {
     feedbackElement.textContent = `不正解！答えは「${correct}」です。`;
   }
 
-  if (currentQuestionIndex < questions.length - 1) {
-    currentQuestionIndex++;
-  } else {
-    showResult();
-    return;
-  }
-
+  // 2秒後に次の質問へ移動
   setTimeout(() => {
     feedbackElement.textContent = '';
-    displayQuestion(currentQuestionIndex);
+    nextQuestion();
   }, 2000);
+}
+
+function nextQuestion() {
+  if (currentQuestionIndex < questions.length - 1) {
+    currentQuestionIndex++;
+    displayQuestion(currentQuestionIndex);
+  } else {
+    showResult();
+  }
 }
 
 function showResult() {
   const quizContainer = document.getElementById('quiz-container');
-  quizContainer.innerHTML = `<h1>結果発表</h1><p>${questions.length}問中<span>${correctCount}問</span>正解！</p><br><a class="quiz-r-btn" href="quiz-1.html">もう一度する</a>`;
+  quizContainer.innerHTML = `
+    <h1>結果発表</h1>
+    <p>${questions.length}問中<span>${correctCount}問</span>正解！</p>
+    <br>
+    <a class="quiz-r-btn" href="quiz-1.html">もう一度する</a>
+  `;
 }
 
 // 初期問題表示
